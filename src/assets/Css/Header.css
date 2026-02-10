@@ -1,0 +1,134 @@
+.hero{
+    background-image: url(/src/assets/Images/hero-bg-2.png);
+    margin-top: 0px;
+    padding: 0px 0px 41px;
+    background-color: #24584C;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 862px;
+    width: 1351px;
+    .topbar{
+        width: 99.8%;
+        height: 115px;
+
+        .img1{
+                margin-top: -8px;
+        }
+        .img2{
+            position: absolute;
+            margin-top: -8px;
+            margin-left: 60.8%;
+        }
+        .links{
+            display: flex;
+            .logo{
+                width: 15%;
+                .logoimg{
+                    margin: 14px 11px;
+                }
+            }
+        }
+        .menu{
+            width: 84%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: -11px;
+            .circlelinks{
+               background: white;
+                padding: 0px 16px 12px 16px;
+                border-radius: 35px;
+                font-size: 22px;
+                color: #000000ad;
+            }
+            .menulinks{
+                width: 60%;
+                margin-right: 4.3%;
+                margin-left: 8px;
+
+                ul{
+                    background: white;
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 12px 10px;
+                    border-radius: 25px;
+                    li:last-child a::after{
+                        display:none ;
+                    }
+                    li{
+                        list-style-type: none;
+                      a {
+                        padding: 7px 22px;
+                        text-decoration: none;
+                        color: #333;
+                        border-radius: 30px;
+                        position: relative;
+                        z-index: 1;
+                        transition: 0.5s;
+
+                        font-family: math;
+                        font-size: 16px;
+                        font-weight: 500;
+
+                        /* Arxa fon */
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            inset: 0;
+                            background: #24584c;
+                            border-radius: 999px;
+                            transform: scaleX(0);
+                            transform-origin: left;
+                            transition: transform 0.35s ease;
+                            z-index: -1;
+                        }
+
+                        /* Sağdakı shape */
+                        &::after {
+                                content: "";
+                                position: absolute;
+                                top: 47%;
+                                right: -27px;
+                                transform: translateY(-50%) scaleX(0);
+                                width: 35px;
+                                height: 52px;
+                                background-image: url(/src/assets/Images/menu-curve-3.png);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                transform-origin: left;
+                                transition: 0.35s ease;
+                                opacity: 0;
+                        }
+
+                        &:hover::before {
+                            transform: scaleX(1);
+                        }
+
+                        &:hover::after {
+                            transform: translateY(-50%) scaleX(1);
+                            opacity: 1;
+                        }
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                    }
+                }
+            }
+            .burgermenu{
+                background: #24584c;
+                border-radius: 35px;
+                font-size: 24px;
+                color: #ffffff;
+                position: absolute;
+                margin-right: 1px;
+                padding: 3px 9px;
+                border: 3px solid white;
+            }
+        }
+    }
+}

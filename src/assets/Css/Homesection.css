@@ -1,0 +1,220 @@
+.basedivision{
+    background: transparent;
+    display: grid;
+    margin-top: -55%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    img{
+        margin-bottom: 30px;
+        animation-name: cloudmove;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        opacity: 0.5;
+
+    }
+}
+
+.infobox{
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -57%;
+    .infotext{
+        .text{
+            h4{
+                margin-left: 20%;
+                margin-top: 26px;
+                color: #FF820F;
+                font-size: 23px;
+                font-family: "Lily Script One", system-ui;
+            }
+             h1{
+                text-align: center;
+                color: black;
+                font-size: 61px;
+                font-family: "Laila", serif;
+                margin-left: -12%;
+                margin-top: -16px;
+            }
+        }
+    }
+    .balon{
+        margin-top: 3%;
+        img{
+            animation-name: baloon;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+        }
+    }
+    .airplane{
+            margin-top: 119px;
+        img{
+            animation-name: airplane;
+            animation-timing-function: linear;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    }
+    .birds{
+            width: 22%;
+            margin-left: 38%;
+            margin-top: -3.7%;
+            position: absolute;
+            img{
+                animation: Birds 4s linear infinite;
+            }
+    }
+}
+
+.heroimg{
+    img{
+        margin-top: -38.5%;
+        height: 400px;
+        position: absolute;
+        margin-left: 25%;
+    }
+}
+.tabsection{
+    background: #24584c;
+    position: relative;
+    height: 106px;
+}
+.tabmenu{
+        height: 194px;
+        width: 83%;
+        border: 16px solid #24584c;
+        border-radius: 125px;
+        margin-left: 98px;
+        margin-top: -8.9%;
+        background: #d0f3b5;
+        position: absolute;
+        .menu{
+                border: 1px solid #24584c47;
+                width: 95%;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                margin-left: 24px;
+            ul{
+                display: flex;
+                justify-content: start;
+                li{
+                    list-style-type: none;
+                    margin-left: 30px;
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: self-end;
+                        img{
+                              margin-right: 12px;
+                              margin-top: 10px;
+                        }
+                        span{
+                            font-weight: 500;
+                            color: #41715d;
+                            font-family: sans-serif;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .tab{
+            form{
+                display: flex;
+                margin-left: 85px;
+                margin-top: 15px;
+                .formgroup{
+                    width: 206px;
+                    font-family: system-ui;
+                    font-weight: 500;
+                    color: black;
+                    margin-left: 12px;
+                    select{
+                    width: 100%;
+                    margin-top: 8px;
+                    outline: none;
+                    border: none;
+                    height: 45px;
+                    padding-left: 8px;
+                    border-radius: 28px;
+                    font-size: 17px;
+                    font-family: sans-serif;
+                    color: #24584cd9;
+                    }
+                    input{
+                    width: 97%;
+                    margin-top: 8px;
+                    outline: none;
+                    border: none;
+                    height: 45px;
+                    padding-left: 8px;
+                    border-radius: 28px;
+                    font-size: 17px;
+                    font-family: sans-serif;
+                    color: #24584cd9;
+                    }
+                }
+            }
+        }
+}
+
+
+
+
+@keyframes Birds{
+    0% {transform: rotate(0);}
+    50% {transform: rotate(-3deg);}
+    100% {transform: rotate(0);}
+}
+
+
+
+
+
+@keyframes airplane {
+    0% {transform: translateX(0);}
+    50% {transform: translatex(15px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes baloon {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(-4deg);}
+    100% {transform: rotate(0);}
+}
+
+@keyframes cloudmove {
+    from { transform: translateX(100vw); }
+    to   { transform: translateX(-100%); }
+}
+
+.c1{
+    animation-duration: 18s;
+    animation-delay: -2s;
+}
+
+.c2{
+    animation-duration: 24s;
+    animation-delay: -8s;
+}
+
+.c3{
+    animation-duration: 25s;
+    animation-delay: -14s;
+}
+
+.c4{
+    animation-duration: 36s;
+    animation-delay: -20s;
+    margin-bottom: 20px !important;
+}
+.c5{
+    animation-duration: 36s;
+    animation-delay: -30s;
+}
